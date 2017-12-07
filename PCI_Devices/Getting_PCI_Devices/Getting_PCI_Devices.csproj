@@ -43,9 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Searching.cs" />
-    <Compile Include="Device.cs" />
-    <Compile Include="ParseDevices.cs" />
+    <Compile Include="LocalSearchingManager.cs" />
+    <Compile Include="PciDevice.cs" />
+    <Compile Include="PciDeviceParser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

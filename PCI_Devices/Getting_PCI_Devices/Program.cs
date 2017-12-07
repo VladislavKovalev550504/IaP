@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Management;
 using System.Text.RegularExpressions;
 
-namespace PCI_Devices
+namespace Getting_PCI_Devices
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var searchingManager = new Searching();
-            var pciDevices = searchingManager.DevicesOnComputer();
-            var customParser = new ParseDevices();
+            var searchingManager = new LocalSearchingManager();
+            var pciDevices = searchingManager.SearchDevicesOnLocalMachine();
+            var customParser = new PciDeviceParser();
             customParser.Parse(pciDevices);
         }
     }

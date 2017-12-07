@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace PCI_Devices
+namespace Getting_PCI_Devices
 {
-    class ParseDevices
+    class PciDeviceParser
     {
-        public void Parse(List<Device> Devices)
+        public void Parse(List<PciDevice> Devices)
         {
             foreach (var device in Devices)
             {
                 var file = new StreamReader("pci-ids.txt");
-                var vendorReg = new Regex("^" + device.VendorID + "  ");
-                var deviceReg = new Regex("^\\t" + device.DeviceID + "  ");
+                var vendorReg = new Regex("^" + device.VendorId + "  ");
+                var deviceReg = new Regex("^\\t" + device.DeviceId + "  ");
                 while (!file.EndOfStream)
                 {
                     var vendorText = file.ReadLine();
@@ -24,8 +24,8 @@ namespace PCI_Devices
                             var deviceText = file.ReadLine();
                             if (deviceText != null && deviceReg.Match(deviceText).Success)
                             {
-                                device.VenDescript = vendorText.Substring(6);
-                                device.DevDescript = deviceText.Substring(7);
+                                device.VendorDescription = vendorText.Substring(6);
+                                device.DeviceDescription = deviceText.Substring(7);
                                 break;
                             }
                         }
@@ -34,8 +34,8 @@ namespace PCI_Devices
             }
             foreach (var device in Devices)
             {
-                Console.WriteLine("VENDOR: {0} \n" +
-                                  "DEVICE: {1}\n", device.VenDescript, device.DevDescript);
+                Console.WriteLine("Vendor: {0} \n" +
+                                  "Device: {1}\n", device.VendorDescription, device.DeviceDescription);
             }
         }
     }

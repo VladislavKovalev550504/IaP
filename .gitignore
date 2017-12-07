@@ -1,0 +1,10 @@
+*.ide
+
+
+
+PCI_Devices/Getting_PCI_Devices/obj/Debug/
+
+PCI_Devices/Getting_PCI_Devices/bin/Debug/
+
+
+PCI_Devices/Getting_PCI_Devices/obj/

@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCI_Devices", "Getting_PCI_Devices\PCI_Devices.csproj", "{7E645D50-34E1-4103-B6DF-01BBD3FE3AB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Getting_PCI_Devices", "Getting_PCI_Devices\Getting_PCI_Devices.csproj", "{7E645D50-34E1-4103-B6DF-01BBD3FE3AB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
