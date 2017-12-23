@@ -12,10 +12,14 @@ Battery_Manager/Battery_Manager/obj/Debug/
 
 Battery_Manager/Battery_Manager/bin/Debug/
 
-Getting_USB_Devices/Getting_USB_Devices/obj/
+USB_Devices/Getting_USB_Devices/obj/
 
-Getting_USB_Devices/Getting_USB_Devices/bin/
+USB_Devices/Getting_USB_Devices/bin/
 
-Getting_USB_Devices/Getting_USB_Devices/MediaDevices\.chm
+USB_Devices/Getting_USB_Devices/MediaDevices\.chm
 
-Getting_USB_Devices/Getting_USB_Devices/MediaDevicesLicense\.txt
+USB_Devices/Getting_USB_Devices/MediaDevicesLicense\.txt
+
+Win_Devices/Getting_Win_Devices/bin/Debug/
+
+Win_Devices/Getting_Win_Devices/obj/Debug/
